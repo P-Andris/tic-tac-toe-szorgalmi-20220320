@@ -1,0 +1,65 @@
+body {
+    background-color: #333;
+    text-align: center;
+}
+
+#main {
+    background-color: #b3b3b3;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "h h h h h"
+                         "s s s s s"
+                         "ar ar as as as"
+                         "f f f f f";
+}
+
+/* Header */
+#title {
+    grid-area: h;
+    /* color: white; */
+    text-decoration: underline;    
+}
+
+/* Section */
+#player-data {
+    grid-area: s;
+}
+
+/* Article */
+#game {
+    grid-area: ar;
+    width: 400px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+#game div {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    font-size: 90px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Aside */
+#game-status {
+    grid-area: as;
+
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+#footer {
+    grid-area: f;
+    padding-top: 15px;
+}
